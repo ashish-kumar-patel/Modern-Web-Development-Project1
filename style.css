@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+#minicircle{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.bounding{
+  width: fit-content;
+  overflow: hidden;
+}
+.bounding .boundingelement{
+  transform: translateY(100%);
+}
+#main{
+  width: 100%;
+  background-color: black;
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.nav {
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav > h5 > a {
+  text-decoration: none;
+  color: white;
+  margin: 4rem;
+  font-family: system-ui;
+}
+.home-content {
+  width: 100vw;
+  color: white;
+}
+.div {
+  font-family: monospace;
+  font-size: 9.2vw;
+  margin-top: 6vw;
+  margin-left: 4rem;
+  opacity: 0.7;
+}
+.dev {
+  font-family: monospace;
+  font-size: 9.2vw;
+  margin-left: 16vw;
+  /* margin-top: -1.8rem; */
+  margin-top: -2vw;
+  opacity: 0.8;
+}
+.toranto {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+  color: white;
+  text-align: right;
+  margin-left: 49.5vw;
+}
+
+.head-text {
+  width: fit-content;
+}
+.side-content {
+  margin-top: 80px;
+  padding-right: 37px;
+}
+.side-content > h5 {
+  text-align: right;
+  font-size: 1vw;
+  padding: 4px;
+}
+.homefooter {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  padding: 0vw 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0px 46px; */
+}
+.homefooter > a {
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.icon > .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: black;
+  background-color: rgb(229, 226, 226);
+}
+.icon > .circle > i {
+  font-size: 1.2rem;
+}
+
+/** Second page styling **/
+
+.home-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding-top: 120px;
+  color: white;
+  /* padding-left: 4.5vw; */
+}
+.element {
+  border-top: 1px solid #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  font-size: 2.7vw;
+  padding: 50px 5px;
+  /* margin-left: 4vw; */
+  /* cursor: pointer; */
+  position: relative;
+}
+.element img {
+  height: 140%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50% ,-50%);
+  /* display: none; */
+  opacity: 0;
+}
+.element > h1 {
+  opacity: 0.7;
+}
+.element > h5 {
+  font-size: 16px;
+}
+.box-3 {
+  border-bottom: 1px solid #888;
+}
+/** page 3 styling **/
+
+.about {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vw 0vw;
+  padding-left: 30vw;
+  gap: 60px;
+}
+.about > img {
+  width: 205px;
+}
+.textabout {
+  width: 20rem;
+}
+.textabout > h5 {
+  font-size: 12px;
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+.textabout > p {
+  margin-bottom: 30px;
+  line-height: 1.3rem;
+}
+.textabout > a {
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 30px;
+}
+
+.suscribe {
+  background-color: black;
+  color: white;
+  padding: 30px 55px;
+    padding-bottom: 5vw;
+}
+.suscribe > h3 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.suscribe > h5 {
+  opacity: 0.6;
+}
+
+/* 
+footer styling  */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  color: white;
+  background-color: black;
+}
+.footer-left{
+  display: flex;
+  padding-left: 2vw;
+  gap: 10px;
+
+}
+.footer-right{
+  gap: 8vw;
+  padding-right: 50px;
+  display: flex;
+}
+.footer-right a{
+  text-decoration: none;
+  color: white;
+  font-size: .9rem;
+    font-family: monospace;
+}
